@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    color: white;
+    background: #333b46;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.topNavBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.topBanner{
+    border: 1px solid red;
+    height: 515px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../img/topbanner.jpg");
+}
+.topNavBar ul{
+    float: right;
+    list-style: none;
+    margin-right: 15px;
+}
+.topNavBar>a{
+    float: left;
+    text-decoration: none;
+    margin:30px 0 0 15px;
+}
+.topNavBar a span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.topNavBar a .rs{
+    color: #e8676b;
+}
+.topNavBar a .card{
+    margin-left: 3px;
+    color: #9a9da2;
+}
+.topNavBar ul li{
+    float: left;
+    font-size: 12px;
+    margin: 35px 15px;
+}
+.topNavBar ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    border-bottom: 3px solid transparent;
+    padding-bottom: 7px;
+}
+.topNavBar ul li a:hover{
+    border-bottom: 3px solid red;
+}
+
+
+main{
+    border: 1px solid red;
+    max-width: 930px;
+    background-color: white;
+    margin: 0 auto;
+}
+main .content{
+    padding: 56px 0 0 50px;
+}
+main .content img{
+    float: left;
+    margin-right:60px;
+}
+main .content .profile{
+    width: 470px;
+    color: black;
+    float: left;
+}
+main .content .profile .welcome{
+    color: white;
+    padding: 5px 12px;
+    background:#e8676b;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "open sans";
+    position: relative;
+}
+main .content .profile .welcome .triangle{
+    border: 8px solid transparent;
+    width:0px;
+    border-left-color:#e8676b;
+    border-top-width:0px;
+    position: absolute;
+    top:30px;
+    left: 5px;
+}
+main .content .profile>h1{
+    margin-top: 40px;
+    margin-bottom: 2px;
+}
+main .content .profile>p{
+    margin-bottom: 25px;
+}
+main .content .profile>hr{
+    margin-bottom: 13px;
+    border: 0.5px solid #dedede;
+}
+main .content .profile>dl>dt,main .content .profile>dl>dd{
+    float: left;
+    margin: 7px 0;
+}
+main .content .profile>dl>dt{
+    width: 30%;
+}
+main .content .profile>dl>dd{
+    width: 70%;
+}
+main>footer{
+    background: #f85063;
+    margin-top:40px;
+}
+main>footer>.svgWrap a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display:inline-block;
+    /*margin:20px;*/
+    width:45px;
+    height:45px;
+    line-height: 30px;
+    margin: 0 20px;
+}
+main>footer>.svgWrap a:hover{
+    background-color: #df4859;
+}
+main>footer>.svgWrap{
+    margin-left: 237px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+main>footer>.svgWrap a svg{
+    fill: white;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+}
